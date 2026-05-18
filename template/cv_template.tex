@@ -1,0 +1,142 @@
+% ============================================================
+% AI CV Generator — LaTeX Template
+% The AI fills this template with your information from context/.
+% You should NOT edit this file manually — ask the AI to generate
+% a filled version and place it in the appropriate output/ folder.
+% ============================================================
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{titlesec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[top=0.5in, bottom=0.5in, left=0.65in, right=0.65in]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+  {\Huge \textbf{FULL NAME}} \\ \vspace{2pt}
+  \small
+  City, Country $|$
+  \href{mailto:email@example.com}{email@example.com} $|$
+  +X XX XXXX XXXX $|$
+  \href{https://linkedin.com/in/handle}{linkedin.com/in/handle} $|$
+  \href{https://github.com/handle}{github.com/handle} \\
+  \vspace{1pt}
+  \small Work eligibility note here
+\end{center}
+
+%---------- PROFESSIONAL SUMMARY ----------
+\section{Professional Summary}
+Summary goes here. 2--3 sentences. Tailored to the target role.
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-1pt]
+  \small{
+    \item \textbf{Languages:} Language1, Language2
+    \item \textbf{Backend:} Framework1, Framework2
+    \item \textbf{Databases:} DB1, DB2
+    \item \textbf{DevOps:} Tool1, Tool2
+    \item \textbf{Architecture:} Pattern1, Pattern2
+  }
+\end{itemize}
+
+%---------- PROFESSIONAL EXPERIENCE ----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Company Name}{Month Year -- Present}
+    {Job Title -- Employment Type | Location}{}
+  \resumeItemListStart
+    \resumeItem{Achievement or responsibility with impact and technology.}
+    \resumeItem{Another bullet point.}
+    \resumeItem{Stack: Tech1, Tech2, Tech3.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Previous Company}{Month Year -- Month Year}
+    {Job Title -- Full-time | City, Country}{}
+  \resumeItemListStart
+    \resumeItem{Bullet 1.}
+    \resumeItem{Bullet 2.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%---------- PROJECTS ----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Project Name} $|$ \emph{Tech1, Tech2, Tech3} $|$ \href{https://github.com/user/repo}{\underline{github.com/user/repo}}}{Month Year -- Month Year}
+  \resumeItemListStart
+    \resumeItem{What the project does and why it is interesting.}
+    \resumeItem{Key technical detail or achievement.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Degree Name, Field of Study}{Start Month. Year}
+    {University Name}{City, Country}
+\resumeSubHeadingListEnd
+
+%---------- ADDITIONAL ----------
+\section{Additional}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-1pt]
+  \small{
+    \item \textbf{Languages:} English (Native), Portuguese (Native)
+    \item \textbf{Certifications:} Certification Name -- Issuer, Year
+  }
+\end{itemize}
+
+\end{document}

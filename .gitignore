@@ -1,0 +1,29 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.blg
+*.bbl
+
+# Keep .tex and .pdf files in output/ (they are the deliverables)
+# If you prefer not to commit PDFs, uncomment the next line:
+# output/**/*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
